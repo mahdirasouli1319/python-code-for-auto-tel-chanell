@@ -1,8 +1,8 @@
 import random
 import requests
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-CHAT_ID = "@your_channel"
+BOT_TOKEN = "8711821157:AAFVM8T7wkl4o-n0rLp2_mVnMNhU25jpI"
+CHAT_ID = "zivanah"
 
 texts = [
     "متن شماره ۱",
