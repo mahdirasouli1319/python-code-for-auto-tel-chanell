@@ -1,0 +1,40 @@
+import random
+import requests
+
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+CHAT_ID = "@your_channel"
+
+texts = [
+    "متن شماره ۱",
+    "متن شماره ۲",
+    "متن شماره ۳",
+    "متن شماره ۴",
+    "متن شماره ۵",
+    "متن شماره ۶",
+    "متن شماره ۷",
+    "متن شماره ۸",
+    "متن شماره ۹",
+    "متن شماره ۱۰",
+    "متن شماره ۱۱",
+    "متن شماره ۱۲",
+    "متن شماره ۱۳",
+    "متن شماره ۱۴",
+    "متن شماره ۱۵",
+    "متن شماره ۱۶",
+    "متن شماره ۱۷",
+    "متن شماره ۱۸",
+    "متن شماره ۱۹",
+    "متن شماره ۲۰",
+]
+
+message = random.choice(texts)
+
+url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+
+requests.post(
+    url,
+    json={
+        "chat_id": CHAT_ID,
+        "text": message
+    }
+)
